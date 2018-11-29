@@ -18,10 +18,18 @@ DomNodeCollection.prototype.html = function(html){
 };
 
 DomNodeCollection.prototype.empty = function(){
-  
+  this.html('');
 };
-DomNodeCollection.prototype.append = function(){
-  
+
+DomNodeCollection.prototype.on = function(eventName, callback){
+  this.each((node) => {
+     node.addEventListener(eventName, callback);
+     const eventKey = `jqliteEvents-${eventName}`;
+     if (typeof node[eventKey] === "undefined") {
+       node[eventKey] = [];
+     }
+     node[eventKey].push(callback);
+   });
 };
 DomNodeCollection.prototype.attr = function(){
   
