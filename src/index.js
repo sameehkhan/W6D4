@@ -1,5 +1,5 @@
 
-window.$1 = (arg) => {
+window.$l = (arg) => {
   if (typeof arg === 'string'){
     return getNodesFromDom(arg);
   } else if (typeof arg === 'function') {
@@ -8,3 +8,4 @@ window.$1 = (arg) => {
       return new DomNodeCollection([arg]);
   }
 };
+ 
