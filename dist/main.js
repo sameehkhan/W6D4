@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\nwindow.$1 = (arg) => {\n  if (typeof arg === 'string'){\n    return getNodesFromDom(arg);\n  } else if (typeof arg === 'function') {\n    return registerDocReadyCallback(arg);\n  } else if (typeof arg === 'object' && arg instanceof HTMLElement){\n      return new DomNodeCollection([arg]);\n  }\n};\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
