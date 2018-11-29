@@ -6,6 +6,25 @@ class DomNodeCollection{
 
 }
 
+DomNodeCollection.prototype.html = function(){
+  
+};
+DomNodeCollection.prototype.empty = function(){
+  
+};
+DomNodeCollection.prototype.append = function(){
+  
+};
+DomNodeCollection.prototype.attr = function(){
+  
+};
+DomNodeCollection.prototype.addClass = function(){
+  
+};
+DomNodeCollection.prototype.removeClass = function(){
+  
+};
+
 
 
 
