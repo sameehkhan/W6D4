@@ -86,14 +86,25 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/dom_node_collection.js":
+/*!************************************!*\
+  !*** ./src/dom_node_collection.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("class DomNodeCollection{\n  constructor(elements){\n    this.elements = elements;\n    \n  }\n\n}\n\n\n\n\n\n\nmodule.exports = DomNodeCollection;\n\n\n//# sourceURL=webpack:///./src/dom_node_collection.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("\nwindow.$l = (arg) => {\n  if (typeof arg === 'string'){\n    return getNodesFromDom(arg);\n  } else if (typeof arg === 'function') {\n    return registerDocReadyCallback(arg);\n  } else if (typeof arg === 'object' && arg instanceof HTMLElement){\n      return new DomNodeCollection([arg]);\n  }\n};\n \n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\nwindow.$l = (arg) => {\n  if (typeof arg === 'string'){\n    return getNodesFromDom(arg);\n  } else if (typeof arg === 'function') {\n    return registerDocReadyCallback(arg);\n  } else if (typeof arg === 'object' && arg instanceof HTMLElement){\n      return new DomNodeCollection([arg]);\n  }\n};\n \nconst DomNodeCollection = __webpack_require__(/*! ./dom_node_collection */ \"./src/dom_node_collection.js\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
